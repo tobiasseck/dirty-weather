@@ -32,8 +32,14 @@ pip install pandas numpy matplotlib
 
 1. Load the dataset `dirty_data.csv` and convert the `date` column to DateTime format.
 2. Set the `date` column as the index.
-3. Ensure relevant columns are numeric and handle any invalid data.
+3. Ensure relevant columns are numeric and handle any invalid data:
+   - Convert `PRCP`, `SNOW`, `SNWD`, `TMAX`, `TMIN`, `TOBS`, and `WESF` to numeric, coercing errors.
 4. Clean the `SNOW` column by replacing NaN values with 0.
+5. Identify and replace obvious errors in the temperature values (`TMAX`, `TMIN`):
+   - Replace temperature values outside realistic ranges (e.g., below -50°C or above 50°C) with NaN.
+6. Handle missing values in the temperature columns (`TMAX`, `TMIN`, `TOBS`):
+   - Replace missing values with the mean of the 4 days before and after the missing value.
+7. Remove duplicate rows based on the date index to ensure each date has only one record.
 
 ## Analysis
 
