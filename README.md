@@ -8,7 +8,7 @@ This project involves analyzing weather data from a dataset to perform various d
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Data Preparation](#data-preparation)
-  - [Analysis Tasks](#analysis-tasks)
+  - [Analysis](#analysis)
     - [Temperature Data Analysis](#temperature-data-analysis)
     - [Precipitation Data Analysis](#precipitation-data-analysis)
     - [Snowfall Data Analysis](#snowfall-data-analysis)
@@ -35,7 +35,7 @@ pip install pandas numpy matplotlib
 3. Ensure relevant columns are numeric and handle any invalid data.
 4. Clean the `SNOW` column by replacing NaN values with 0.
 
-## Analysis Tasks
+## Analysis
 
 ### Temperature Data Analysis
 
@@ -82,20 +82,20 @@ pip install pandas numpy matplotlib
 
 **Monthly Temperature Difference:**
 
-- ![Monthly Temperature Difference](results/temperature_difference_chart.png)
+![Monthly Temperature Difference](results/temperature_difference_chart.png)
 
 **Daily Maximum and Minimum Temperatures in 2018:**
 
-- ![Daily Temperatures in 2018](results/daily_temperatures_2018_chart.png)
+![Daily Temperatures in 2018](results/daily_temperatures_2018_chart.png)
 
 **Monthly Total Precipitation in 2018:**
 
-- ![Monthly Total Precipitation](results/monthly_precipitation_2018_chart.png)
+![Monthly Total Precipitation](results/monthly_precipitation_2018_chart.png)
 
 **Number of Days Without Precipitation per Year:**
 
-- ![Days Without Precipitation](results/days_without_precipitation_chart.png)
+![Days Without Precipitation](results/days_without_precipitation_chart.png)
 
 **Daily Snowfall in Early and Late Winter 2018:**
 
-- ![Daily Snowfall](results/daily_snowfall_winter_2018_chart.png)
+![Daily Snowfall](results/daily_snowfall_winter_2018_chart.png)
